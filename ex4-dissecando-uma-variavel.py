@@ -1,6 +1,7 @@
 variavel = input('Digite algo: ')
 
-print("É letra: ", variavel.isalpha())
-print("É numero:", variavel.isnumeric())
-print("Esta em Maiuscula: ", variavel.isupper())
-print("Esta em Minuscula: ", variavel.islower())
+print('Contém letras: {}'.format(variavel.isalpha()))
+print('Só Contém letras Minusculas: {}'.format(variavel.islower()))
+print('Só Contém letras Maiusculas: {}'.format(variavel.isupper()))
+print('Só Contém numeros: {}'.format(variavel.isnumeric()))
+print('É um titulo: {}'.format(variavel.istitle()))

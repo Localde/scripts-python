@@ -1,3 +1,4 @@
-valor = float(input("Digite um valor: "))
-print("Centimetros: {}".format(valor * 100))
-print("Milimetros: {}".format(valor * 1000))
+metros = float(input('Digite sua altura em metros: '))
+
+print('Centimetros: {}'.format(int(metros * 100)))
+print('Milimetros: {}'.format(int(metros * 1000)))

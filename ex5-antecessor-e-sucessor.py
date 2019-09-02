@@ -1,3 +1,4 @@
-numero = int(input('Digite um numero: '))
-print("Antecessor: {}".format(numero-1))
-print("Sucessor: {}".format(numero+1))
+inteiro = int(input('Digite um numero inteiro: '))
+
+print('Antecessor: {}'.format(inteiro - 1))
+print('Sucessor: {}'.format(inteiro + 1))
