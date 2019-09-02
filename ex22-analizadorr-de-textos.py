@@ -1,8 +1,0 @@
-nome = str(input('Digite o nome completo de uma pessoa: ')).strip()
-print('O nome com todas as letras maiusculas: {}'.format(nome.upper()))
-print('O nome com todas as letras minusculas: {}'.format(nome.lower()))
-print('Quantas letras ao todo. Ps: sem considerar os espaços.')
-print('Quantidade de letras: {}'.format(len(nome)-nome.count(' ')))
-#print('Seu primeiro nome tem {} letras'.format(nome.find(' ')))
-separa = nome.split()
-print('Seu primeiro nome é {} e tem {} letras.'.format(separa[0], len(separa[0])))
