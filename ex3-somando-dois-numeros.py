@@ -1,4 +1,4 @@
-numero1 = int(input('Digite um numero: '))
-numero2 = int(input('Digite outro numero: '))
+a = int(input('Digite um numero: '))
+b = int(input('Digite outro numero: '))
 
-print('{} + {} = {}'.format(numero1, numero2, numero1 + numero2))
+print('A soma de ambos os numeros é igual a {}.'.format(a + b))
