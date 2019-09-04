@@ -1,3 +1,3 @@
-numero = int(input('Digite um numero: '))
-print('Antecessor: {}'.format(numero - 1))
-print('Sucessor: {}'.format(numero + 1))
+number = int(input('Digite um numero: '))
+print('Antecessor: {}'.format(number - 1))
+print('Sucessor: {}'.format(number + 1))

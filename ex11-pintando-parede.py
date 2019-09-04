@@ -1,4 +1,3 @@
-largura = float(input('Qual é a largura da parede? '))
-altura = float(input('Qual é a altura da parede? '))
-
-print('A quantidade de tinta necessario para pintar a parede é de: {} litros'.format((largura * altura) / 2))
+height = float(input('Qual é a altura da parede? '))
+width = float(input('Qual é a largura da parede?'))
+print('Sera necessario {} litros de tinta para pintar a parede.'.format((height*width)/2))

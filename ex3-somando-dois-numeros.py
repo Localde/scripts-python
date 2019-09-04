@@ -1,4 +1,5 @@
-a = int(input('Digite um numero: '))
-b = int(input('Digite outro numero: '))
+anumber = float(input('Digite um numero: '))
+bnumber = float(input('Digite outo numero: '))
+soma = anumber + bnumber
 
-print('A soma de ambos os numeros é igual a {}.'.format(a + b))
+print('{} + {} = {}'.format(anumber, bnumber, soma))

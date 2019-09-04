@@ -1,4 +1,4 @@
-nota1 = float(input('Digite a primeira nota: '))
-nota2 = float(input('Digite a segunda nota:'))
+anota = float(input('Digite sua primeira nota: '))
+bnota = float(input('Digite sua segunda nota: '))
 
-print('A média é igual a: {}'.format((nota1 + nota2) / 2))
+print('Média: {}'.format((anota+bnota)/2))
