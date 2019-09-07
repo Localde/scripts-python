@@ -1,2 +1,2 @@
-real = float(input('Digite quantos reais deseja converter em Dollar: '))
-print('${} Dollars'.format(real/4.00))
+dinheiro = float(input('Quanto dinheiro você tem? '))
+print('Em Dolares você vai ter: ${:.2f}'.format(dinheiro / 4))

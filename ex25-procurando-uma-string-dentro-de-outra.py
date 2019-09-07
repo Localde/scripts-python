@@ -1,3 +1,2 @@
-nome = str(input('Escreva seu nome completo: ')).strip().lower()
-
-print('silva' in nome)
+nome = str(input('Digite seu nome completo: ')).lower()
+print('Tem Silva' if 'silva' in nome else 'Não tem Silva')
