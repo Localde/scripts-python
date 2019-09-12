@@ -1,4 +1,4 @@
-anota = float(input('Digite sua primeira nota: '))
-bnota = float(input('Digite sua segunda nota: '))
+anota = float(input('\033[1;33mDigite sua primeira nota: '))
+bnota = float(input('\033[1;36mDigite sua segunda nota: '))
 
-print('Média: {}'.format((anota+bnota)/2))
+print('\033[1;31mMédia: \033[1;30m{}'.format((anota+bnota)/2))

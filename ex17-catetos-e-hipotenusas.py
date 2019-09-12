@@ -9,8 +9,8 @@
 
 #print('A hipotenusa vai medir {:.2f}'.format(hi))
 from math import hypot
-co = float(input('Comprimento do cateto oposto: '))
-ca = float(input('Comprimento do cateto adjacente: '))
+co = float(input('\033[1;31mComprimento do cateto oposto: '))
+ca = float(input('\033{1;34mComprimento do cateto adjacente: '))
 hi = hypot(co, ca)
 
-print('A hipotenusa vai medir {:.2f}'.format(hi))
+print('\033[1;33mA hipotenusa vai medir \033[1;30m{:.2f}'.format(hi))

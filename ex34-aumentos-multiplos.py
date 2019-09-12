@@ -1,8 +1,2 @@
 salario = float(input('Qual é seu salario? '))
-
-if salario > 1250:
-    newsalario = salario + (salario * 0.1)
-    print('Seu novo salario é de R${:.2f}.'.format(newsalario))
-else:
-    newsalario = salario + (salario * 0.15)
-    print('Seu novo salario é de R${:.2f}.'.format(newsalario))
+print('Seu salario teve um aumento de 10% então você recebera R${:.2f}'.format(salario + (salario * 0.1)) if salario > 1250 else 'Seu salario teve um aumento de 15% então você recebera R${:.2f}'.format(salario + (salario * 0.15)))
