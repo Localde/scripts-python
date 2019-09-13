@@ -1,2 +1,2 @@
-salário = float(input("\033[1;31mInforme seu salario para mostrar o seu novo salario com aumento: "))
-print("\033[1;34mSeu novo salario é de \033[1;30mR${}.".format(salário+(salário * 0.15)))
+salario = float(input('Qual é seu salario: '))
+print('Seu salario com o aumento de 15% é de R${:.2f}'.format(salario * 1.15))

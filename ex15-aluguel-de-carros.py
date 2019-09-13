@@ -1,4 +1,4 @@
-dias = int(input('\033[1;31mQuantos dias o carro andou? '))
-km = float(input('\033[1;32mQuantos km o carro andou? '))
+dias = int(input('Quantos dias o carro foi alugado? '))
+km = float(input('Quantos Km foi rodado? '))
 
-print('\033[1;34mDeve pagar \033[1;30mR${:.2f}'.format((60 * dias) + (0.15 * km)))
+print('Você deve pagar R${:.2f}'.format((dias * 60) + (km * 0.15)))

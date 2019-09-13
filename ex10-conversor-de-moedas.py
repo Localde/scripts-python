@@ -1,2 +1,2 @@
-dinheiro = float(input('\033[1;31mQuanto dinheiro você tem? '))
-print('\033[1;32mEm Dolares você vai ter: \033[1;30m${:.2f}'.format(dinheiro / 4))
+carteira = float(input('\033[1;31mQuanto dinheiro você tem na carteira? '))
+print('\033[1;33mVocê pode comprar \033[1;30m${:.2f} \033[1;33mdollars.'.format(carteira / 3.27))

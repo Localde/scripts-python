@@ -1,5 +1,4 @@
 from random import randint
-
-aleatorio = randint(1, 5)
-chute = int(input('Adivinhe o numero que estou pensando: '))
-print('Você acertou!' if chute == aleatorio else 'Você errou!')
+tentativa = int(input('Digite um numero de 0 a 5: '))
+pensando = randint(0, 6)
+print('Acertou Miseravel!!!' if tentativa == pensando else 'Errou! Tente Novamente.')
