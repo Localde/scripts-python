@@ -1,7 +1,7 @@
-frase = str(input('Digite uma frase: ')).lower()
-a = frase.count('a')
-print('A letra a aparece {} vezes.'.format(a))
-posicao = frase.find('a')
-print('E ela aparece pela primeira vez na {} posição.'.format(posicao + 1))
-posicao = frase.rfind('a')
-print('E ela aparece pela ultima vez na {} posição.'.format(posicao + 1))
+frase = str(input('Digite uma frase: ')).strip().lower()
+
+print('A letra A aparece {} vezes.'.format(len(frase)))
+
+print('A posição que aparece a primeira vez a letra A é a {} posição'.format(frase.find('a') + 1))
+
+print('A ultima posição que aparece a letra A é a {} posição'.format(frase.rfind('a') + 1))

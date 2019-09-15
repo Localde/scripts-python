@@ -1,25 +1,10 @@
-anumber = int(input('Digite um numero: '))
-bnumber = int(input('Digite outro numero: '))
-cnumber = int(input('Digite outro numero: '))
+a = int(input('Digite um numero: '))
+b = int(input('Digite outro numero: '))
+c = int(input('Digite outro numero: '))
 
-if anumber > bnumber and anumber > cnumber:
-    if bnumber > cnumber:
-        print('Maior: {}'.format(anumber))
-        print('Menor: {}'.format(cnumber))
-    else:
-        print('Maior: {}'.format(anumber))
-        print('Menor: {}'.format(bnumber))
-elif bnumber > anumber and bnumber > cnumber:
-    if anumber > cnumber:
-        print('Maior: {}'.format(bnumber))
-        print('Menor: {}'.format(cnumber))
-    else:
-        print('Maior: {}'.format(bnumber))
-        print('Menor: {}'.format(anumber))
+if a > b and a > c:
+    print('Maior: {} \nMenor: {}'.format(a, c) if b > c else 'Maior: {} \n Menor: {}'.format(a, b))
+elif b > a and b > c:
+    print('Maior: {} \n Menor: {}'.format(b, c) if a > c else 'Maior: {} \n Menor: {}'.format(b, a))
 else:
-    if anumber > bnumber:
-        print('Maior: {}'.format(cnumber))
-        print('Menor: {}'.format(bnumber))
-    else:
-        print('Maior: {}'.format(cnumber))
-        print('Menor: {}'.format(anumber))
+    print('Maior: {} \n Menor: {}'.format(c, b) if a > b else 'Maior: {} \n Menor: {}'.format(c, a))
