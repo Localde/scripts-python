@@ -1,3 +1,6 @@
-km = float(input('Quantos Kilometros de distância? '))
+distancia = float(input('Digite a distancia em km do seu destino: '))
 
-print('Valor Cobrado: R${:.2f}'.format(km * 0.50) if km <= 200 else 'Valor Cobrado: R${:.2f}'.format(km * 0.45))
+if distancia <= 200:
+    print('Valor da Passagem: R${:.2f}'.format(distancia * 0.5))
+else:
+    print('Valor da Passagem: R${:.2f}'.format(distancia * 0.45))
