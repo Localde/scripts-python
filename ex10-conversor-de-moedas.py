@@ -1,2 +1,2 @@
-dinheiro = float(input('Quanto dinheiro você tem? '))
-print('Você pode comprar ${:.2f} dolares.'.format(dinheiro/3.27))
+money = float(input('How many reais do you have in your wallet? '))
+print('You can buy {} dollars.'.format(money / 3.27))

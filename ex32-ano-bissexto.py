@@ -1,22 +1,7 @@
-from datetime import date
+#nesta video aula tem uma função interessante que pega a data do computador. Que é util para o exercicio atual.
+year = int(input('Enter a year: '))
 
-ano = int(input('Digite um ano qualquer ou coloque 0 para analizar o ano atual: '))
-
-if ano == 0:
-    ano = date.today().year
-
-#if ano % 4 == 0:
-    #if ano % 100 != 0:
-        #print('O ano é Bissexto')
-    #else:
-        #print('O ano não é Bissexto!')
-#else:
-    #if ano % 400 == 0:
-        #print('O ano é Bissexto')
-    #else:
-        #print('O ano não é Bissexto')
-
-if ano % 4 == 0 and ano % 100 != 0 or ano % 400 == 0:
-    print('O ano {} é Bissexto'.format(ano))
+if year % 4 == 0 and year % 100 != 0 or year % 400 == 0:
+    print('it is a leap year.')
 else:
-    print('O ano {} não é Bissexto'.format(ano))
+    print('it is not a leap year.')
