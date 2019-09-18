@@ -1,9 +1,8 @@
-numero = int(input('Digite um numero inteiro: '))
+number = int(input('Enter a number: '))
 
-if numero == 0:
-    print('O numero é neutro.')
+if number == 0:
+    print('The Number is Neutral.')
+elif number % 2 == 0:
+    print('It is pair..')
 else:
-    if numero % 2 == 0:
-        print('O numero é par.')
-    else:
-        print('O numero é impar. ')
+    print('It is odd.')

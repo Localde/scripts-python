@@ -1,2 +1,4 @@
-nome = str(input('Digite seu nome completo: ')).lower()
-print('Tem Silva' if 'silva' in nome else 'Não tem Silva')
+name = str(input('Type a person is name: ')).lower()
+verification = 'silva' in name
+
+print('It is {} that the name has silva.'.format(verification))
