@@ -1,4 +1,3 @@
-nome = str(input('Escreva o nome de uma cidade: ')).strip().lower()
-separar = nome[:5]
+cidade = str(input('Enter a city name:')).strip().lower()
 
-print('santo' in separar)
+print('It is {} that the city has SANTO in its name.'.format('santo' in cidade))
