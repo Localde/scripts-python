@@ -1,6 +1,6 @@
-distance = float(input('How far is the trip?'))
+km = float(input('How many kilometers will be traveled?'))
 
-if distance <= 200:
-    print('The ticket will cost {} dollars.'.format(distance * 0.5))
+if km <= 200:
+    print('The ticket costs {} dollars.'.format(km * 0.5))
 else:
-    print('The ticket will cost {} dollars.'.format(distance * 0.45))
+    print('The ticket costs {} dolars.'.format(km * 0.45))

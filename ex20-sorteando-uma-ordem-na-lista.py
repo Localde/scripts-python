@@ -1,24 +1,12 @@
-#import random
+from random import sample
 
-#nome1 = str(input('Digite um nome: '))
-#nome2 = str(input('Digite outro nome: '))
-#nome3 = str(input('Digite outro nome: '))
-#nome4 = str(input('Digite outro nome: '))
+aluno1 = str(input('Digite o nome do aluno: '))
+aluno2 = str(input('Digite o nome do aluno: '))
+aluno3 = str(input('Digite o nome do aluno: '))
+aluno4 = str(input('Digite o nome do aluno: '))
 
-#lista = [nome1, nome2, nome3, nome4]
+lista = [aluno1, aluno2, aluno3, aluno4]
 
-#random.shuffle(lista)
+aleatorio = sample(lista, 4)
 
-#print('{}'.format(lista))
-from random import shuffle
-
-nome1 = str(input('Digite um nome: '))
-nome2 = str(input('Digite outro nome: '))
-nome3 = str(input('Digite outro nome: '))
-nome4 = str(input('Digite outro nome: '))
-
-lista = [nome1, nome2, nome3, nome4]
-
-shuffle(lista)
-
-print('{}'.format(lista))
+print('{}'.format(aleatorio))

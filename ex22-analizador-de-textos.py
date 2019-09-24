@@ -1,9 +1,5 @@
-nome = str(input('Digite seu nome completo: ')).strip()
+text = input('Digite algo: ')
 
-print('Todas as letras maiusculas: {}'.format(nome.upper()))
-print('Todas as letras minusculas: {}'.format(nome.lower()))
-print('Total de letras: {}'.format(len(nome) - nome.count(' ')))
-
-separar = nome.split()
-
-print('Quantas letras tem o primeiro nome: {}'.format(len(separar[0])))
+print('É um titulo? {}'.format(text.istitle()))
+print('Esta em Maiuscula? {}'.format(text.isupper()))
+print('Esta em Minuscula? {}'.format(text.islower()))

@@ -1,4 +1,3 @@
-name = str(input('Type a person is name: ')).lower()
-verification = 'silva' in name
-
-print('It is {} that the name has silva.'.format(verification))
+name = str(input('Enter a name: ')).lower()
+verificar = 'silva' in name
+print('It is {} that you have Silva in the name.'.format(verificar))

@@ -1,6 +1,4 @@
 number = int(input('Enter a number: '))
-successor = number + 1
-predecessor = number - 1
 
-print('The successor number is {}.'.format(successor))
-print('The predecessor numer is {}.'.format(predecessor))
+print('Predecessor: {}'.format(number - 1))
+print('Successor: {}'.format(number + 1))

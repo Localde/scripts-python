@@ -1,5 +1,10 @@
-frase = str(input('Digite uma frase: ')).strip().lower()
+phrase = str(input('Enter a sentence: ')).strip().lower()
 
-print('A letra A aparece {} vezes.'.format(frase.count('a')))
-print('A letra A aparece pela primeira vez na {} posição.'.format(frase.find('a') + 1))
-print('A letra A aparece pela ultima vez na {} posição.'.format(frase.rfind('a') + 1))
+contador = phrase.count('a')
+print('The letter A appears {} times.'.format(contador))
+
+first_order = phrase.find('a') + 1
+print('The letter A appears for the first time in the {} order.'.format(first_order))
+
+last_order = phrase.rfind('a') + 1
+print('The letter A appears for the last time in the {} order.'.format(last_order))
