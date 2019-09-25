@@ -1,2 +1,3 @@
-number = float(input('Digite um numero: '))
-print('A parte inteira é de {}'.format(int(number)))
+number = float(input('Enter a number: '))
+
+print(int(number))

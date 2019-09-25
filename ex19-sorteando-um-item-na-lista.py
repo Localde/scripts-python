@@ -1,10 +1,10 @@
 from random import sample
 
-nome_1 = str(input('Digite um nome: '))
-nome_2 = str(input('Digite outro nome: '))
-nome_3 = str(input('Digite outro nome: '))
-nome_4 = str(input('Digite outro nome: '))
+aluno1 = str(input('Digite um nome: '))
+aluno2 = str(input('Digite um nome: '))
+aluno3 = str(input('Digite um nome: '))
+aluno4 = str(input('Digite um nome: '))
 
-names = [nome_1, nome_2, nome_3, nome_4]
+lista = [aluno1, aluno2, aluno3, aluno4]
 
-print('O escolhido foi {}'.format(sample(names, 1)))
+print('O escolhido foi {}.'.format(sample(lista, 1)))

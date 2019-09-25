@@ -1,7 +1,8 @@
-#nesta video aula tem uma função interessante que pega a data do computador. Que é util para o exercicio atual.
-year = int(input('Enter a year: '))
+ano = int(input('Enter a year: '))
 
-if year % 4 == 0 and year % 100 != 0 or year % 400 == 0:
-    print('it is a leap year.')
+if ano % 4 == 0 and ano % 100 != 0:
+    print('É bissexto.')
+elif ano % 400 == 0:
+    print('É bissexto.')
 else:
-    print('it is not a leap year.')
+    print('Não é bissexto.')

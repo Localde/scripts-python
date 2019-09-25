@@ -1,3 +1,3 @@
-name = str(input('Enter a name: ')).lower()
-verificar = 'silva' in name
-print('It is {} that you have Silva in the name.'.format(verificar))
+name = str(input('What is your name?')).lower()
+
+print('It is {} that you are from the Silva family.'.format('silva' in name))
