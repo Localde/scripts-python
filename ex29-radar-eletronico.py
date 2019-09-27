@@ -1,10 +1,6 @@
-velocidade = int(input('Qual foi a velocidade do carro em Km? '))
+km = int(input('Qual é a velocidade do carro? '))
 
-if velocidade > 80:
-    multa = (velocidade - 80) * 7
-    print('Você foi multado por excesso de velocidade!!!')
-    print('E devera pagar R${:.2f}'.format(multa))
+if km > 80:
+    print(f'Você foi multado e deve pagar: R${7 * (km - 80):.2f}')
 else:
-    print('Boa Viagem!!!')
-print('-=-' * 20)
-print('FIM DO PROGRAMA')
+    print('Boa Viagem!')

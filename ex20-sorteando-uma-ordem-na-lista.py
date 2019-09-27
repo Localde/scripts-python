@@ -1,12 +1,10 @@
 from random import sample
 
-aluno1 = str(input('Digite o nome do aluno: '))
-aluno2 = str(input('Digite o nome do aluno: '))
-aluno3 = str(input('Digite o nome do aluno: '))
-aluno4 = str(input('Digite o nome do aluno: '))
+nome_1 = str(input('Digite um nome: '))
+nome_2 = str(input('Digite um nome: '))
+nome_3 = str(input('Digite um nome: '))
+nome_4 = str(input('Digite um nome: '))
 
-lista = [aluno1, aluno2, aluno3, aluno4]
+lista = [nome_1, nome_2, nome_3, nome_4]
 
-aleatorio = sample(lista, 4)
-
-print('{}'.format(aleatorio))
+print(sample(lista, 4))
