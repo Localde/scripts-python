@@ -1,5 +1,4 @@
-height = float(input('How tall is the wall? '))
-width = float(input('How wide is the wall? '))
-area = height * width
-worn_paint = area / 2
-print('{} liters of paint will be spent.'.format(worn_paint))
+larg = float(input('Largura da parede: '))
+alt = float(input('Altura da parede: '))
+área = larg * alt
+print('Sua parede tem a dimensão de {}x{} e sua área é de {}m².'.format(larg, alt, área))

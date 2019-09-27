@@ -1,1 +1,1 @@
-print("\033[0;33;44mOlá Mundo!")
+print('Olá, Mundo!')

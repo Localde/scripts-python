@@ -1,4 +1,4 @@
-number = int(input('Enter a number: '))
-
-print('Predecessor: {}'.format(number - 1))
-print('Successor: {}'.format(number + 1))
+n = int(input('Digite um número: '))
+a = n - 1
+s = n + 1
+print('Analisando o valor {}, seu antecessor é {} e o sucessor é {}'.format(n, a, s))

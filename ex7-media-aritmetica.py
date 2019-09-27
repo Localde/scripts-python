@@ -1,4 +1,5 @@
-anota = float(input('\033[1;33mDigite sua primeira nota: '))
-bnota = float(input('\033[1;36mDigite sua segunda nota: '))
+n1 = float(input('Primeira nota do aluno: '))
+n2 = float(input('Segunda nota do aluno: '))
 
-print('\033[1;31mMédia: \033[1;30m{}'.format((anota+bnota)/2))
+m = (n1 + n2) / 2
+print('A média entre {} e {} é igual a {}'.format(n1, n2, m))

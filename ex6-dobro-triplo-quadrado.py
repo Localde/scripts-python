@@ -1,5 +1,6 @@
-from math import sqrt
-
-numero = float(input('Digite um numero: '))
-
-print('Dobro: {} \nTriplo: {} \nRaiz Quadrada: {}'.format(numero * 2, numero * 3, sqrt(numero)))
+n = int(input('Digite um número: '))
+d = n * 2
+t = n * 3
+r = n ** (1/2)
+print('O dobro de {} vale.'.format(n, d))
+print('O triplo de {} vale {}. \nA raiz quadrada de {} é igual a {}.'.format(n, t, n, r))

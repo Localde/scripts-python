@@ -1,3 +1,4 @@
-metros = float(input('Quantos metros vocÊ tem? '))
-print(f'Centimetros: {metros * 100}')
-print(f'Milimetros: {metros * 1000}')
+medida = float(input('Uma distância em metros: '))
+cm = medida * 100
+mm = medida * 1000
+print('A medida de {}m corresponde a {}cm e {}mm'.format(medida, cm, mm))
