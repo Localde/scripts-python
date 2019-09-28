@@ -1,1 +1,3 @@
-import this
+import pygame
+
+help(pygame)

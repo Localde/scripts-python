@@ -1,3 +1,5 @@
-celsius = float(input('What is the temperature? '))
-conversion = (celsius * 1.8) + 32
-print('Celsius converted to Fahrenheit is equal to {}.'.format(conversion))
+celsius = float(input('Digite uma temperatura: '))
+
+fahrenheit = (celsius * 1.8) + 32
+
+print(f'A conversão de celsius para fahrenheit é igual a {fahrenheit}')

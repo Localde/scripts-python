@@ -1,3 +1,10 @@
-cidade = str(input('Enter a city name:')).strip().lower()
+nome_da_cidade = str(input('Digite o nome da cidade: ')).strip().lower().split()
 
-print('It is {} that the city has SANTO in its name.'.format('santo' in cidade))
+verifica = nome_da_cidade[0].find('santo')
+
+if verifica == 0:
+    print('Tem Santo no inicio.')
+else:
+    print('Não tem Santo no inicio.')
+
+

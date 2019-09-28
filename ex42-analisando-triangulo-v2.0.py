@@ -1,15 +1,13 @@
-alado = int(input('Digite o valor do lado A: '))
-blado = int(input('Digite o valor do lado B: '))
-clado = int(input('Digite o valor do lado C: '))
+a__lado = int(input('Digite o lado A: '))
+b_lado = int(input('Digite o lado B: '))
+c_lado = int(input('Digite o lado C: '))
 
-if alado >= blado and alado >= clado and blado + clado >= alado or blado >= alado and blado >= clado and alado + clado >= blado or clado >= alado and clado >= blado and alado + blado >= clado:
-
-    if alado == blado and alado == clado:
-        print('É um Triângulo Equilátero.')
-    elif alado == blado and alado != clado or blado == clado and blado != alado or clado == alado and clado != blado:
-        print('É um Triângulo Isósceles.')
+if a__lado >= b_lado and a__lado >= c_lado and b_lado + c_lado >= a__lado or b_lado >= a__lado and b_lado >= c_lado and a__lado + c_lado >= b_lado or c_lado >= a__lado and c_lado >= b_lado and a__lado + b_lado >= c_lado:
+    if a__lado == b_lado and b_lado == c_lado:
+        print('É um triângulo equilatero.')
+    elif a__lado == b_lado or b_lado == c_lado or c_lado == a__lado:
+        print('É um triângulo Isósceles.')
     else:
-        print('É um Triângulo Escaleno.')
-
+        print('É um triângulo escaleno.')
 else:
     print('Não é um triângulo.')
