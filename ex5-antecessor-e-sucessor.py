@@ -1,4 +1,5 @@
-number = int(input('Enter a number: '))
-
-print('Predecessor: {}'.format(number - 1))
-print('Successor: {}'.format(number + 1))
+numero = int(input('Digite um numero inteiro: '))
+sucessor = numero + 1
+antecessor = numero - 1
+print(f'Sucessor: {sucessor}')
+print(f'Antecessor: {antecessor}')

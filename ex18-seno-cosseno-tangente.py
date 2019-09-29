@@ -1,7 +1,7 @@
 from math import sin, cos, tan
 
-angulo = float(input('Digite um ângulo: '))
+angulo = float(input('Digite um angulo: '))
 
-print(f'O seno é {sin(angulo)}')
-print(f'O coseno é {cos(angulo)}')
-print(f'A tangente é {tan(angulo)}')
+print(f'Seno: {sin(angulo)}')
+print(f'Cosseno: {cos(angulo)}')
+print(f'Tangente: {tan(angulo)}')

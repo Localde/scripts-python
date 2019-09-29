@@ -1,3 +1,5 @@
-algo = input('Digite algo:')
+algo = input('Digite algo: ')
 
-print('É um titulo: {}'.format(algo.istitle()))
+print(f'Esta Capitalizado? {algo.istitle()}')
+print(f'Esta em maiuscula? {algo.isupper()}')
+print(f'Esta em minuscula? {algo.islower()}')
