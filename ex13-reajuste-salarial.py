@@ -1,2 +1,3 @@
-salario = float(input('Digite seu Salario: '))
-print(f'Com o aumente de 15% você recebera R${salario * 1.15:.2f}')
+salario = float(input('Qual é seu salario? '))
+
+print(f'Seu novo salario com o aumento de 15% é de R${salario * 1.15:.2f}')

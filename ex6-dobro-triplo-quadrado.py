@@ -1,5 +1,7 @@
 from math import sqrt
 
-numero = float(input('Digite um numero: '))
+number = int(input('Digite um numero inteiro: '))
 
-print('Dobro: {} \nTriplo: {} \nRaiz Quadrada: {}'.format(numero * 2, numero * 3, sqrt(numero)))
+print(f'Dobro: {number * 2}')
+print(f'Triplo> {number * 3}')
+print(f'Raiz Quadrada: {sqrt(number)}')

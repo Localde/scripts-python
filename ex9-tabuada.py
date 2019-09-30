@@ -1,4 +1,4 @@
-number = int(input('Digite um numero: '))
+number = int(input('Digite um numero inteiro: '))
 
 print(f'{number} x 1 = {number * 1}')
 print(f'{number} x 2 = {number * 2}')

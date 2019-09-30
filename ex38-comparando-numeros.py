@@ -1,9 +1,15 @@
-anumber = int(input('Digite um numero inteiro: '))
-bnumber = int(input('Digite outro numero inteiro: '))
+a_number = int(input('Digite um numero inteiro: '))
+b_number = int(input('Digite um numero inteiro: '))
 
-if anumber > bnumber:
-    print('O numero {} é maior que {}.'.format(anumber, bnumber))
-elif bnumber > anumber:
-    print('O numero {} é maior que {}.'.format(bnumber, anumber))
+maior = a_number
+
+if b_number < maior:
+    print(f'Menor: {b_number}')
+    print(f'Maior: {maior}')
+elif b_number > maior:
+    maior = b_number
+    print(f'Menor: {a_number}')
+    print(f'Maior: {maior}')
 else:
-    print('Não existe valor maior, os dois são iguais.')
+    print('São iguais')
+

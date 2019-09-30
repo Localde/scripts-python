@@ -1,5 +1,5 @@
 algo = input('Digite algo: ')
 
-print(f'Esta Capitalizado? {algo.istitle()}')
-print(f'Esta em maiuscula? {algo.isupper()}')
-print(f'Esta em minuscula? {algo.islower()}')
+print(f'Esta capitalizada: {algo.istitle()}')
+print(f'Esta em Caixa Alta: {algo.isupper()}')
+print(f'Esta em caixa baixa: {algo.islower()}')
