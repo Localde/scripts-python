@@ -1,2 +1,2 @@
-wallet = float(input('How much money do you have in your wallet? '))
-print('You can buy ${:.2f} dollars'.format(wallet/3.27))
+carteira = float(input('Quanto dinheiro você tem na carteira? '))
+print(f'Você pode comprar R${carteira/3.27:.2f}')

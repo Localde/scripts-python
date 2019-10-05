@@ -1,10 +1,13 @@
 from random import randint
-print('[1]PEDRA\n[2]PAPEL\n[3]TESOURA\n')
-escolha = int(input('Faça sua escolha: '))
-maquina = randint(1, 3)
-if escolha == 1 and maquina == 3 or escolha == 2 and maquina == 1 or escolha == 3 and maquina == 2:
-    print('Voce Ganhou', maquina)
-elif escolha == 3 and maquina == 1 or escolha == 1 and maquina == 2 or escolha == 2 and maquina == 3:
-    print('Voce Perdeu', maquina)
+
+print('Escolha entre as seguintes opções:')
+print('[0] Pedra\n[1] Papel\n[2] Tesoura')
+escolha = int(input())
+maquina = randint(0, 2)
+
+if escolha == 0 and maquina == 2 or escolha == 1 and maquina == 0 or escolha == 2 and maquina == 1:
+    print('Voce Venceu!', maquina)
+elif escolha == 2 and maquina == 0 or escolha == 0 and maquina == 1 or escolha == 1 and maquina == 2:
+    print('Você Perdeu!', maquina)
 else:
-    print('Empatou!', maquina)
+    print('Você Empatou!', maquina)
