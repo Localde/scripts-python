@@ -1,2 +1,5 @@
-salario = float(input('Qual é seu salario: '))
-print(f'Seu novo salario é de R${salario * 1.1:.2f}' if salario > 1250 else f'Seu novo salario é de R${salario * 1.15:.2f}')
+salario = float(input('Qual é o seu salario? '))
+if salario <= 1250:
+    print(f'Seu novo salario é de: R${salario * 1.15:.2f}')
+else:
+    print(f'Seu novo salario é de: R${salario * 1.10:.2f}')
