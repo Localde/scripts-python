@@ -1,6 +1,6 @@
 soma = 0
-for ler in range(1, 7):
-    numero = int(input('Digite um numero inteiro: '))
-    if numero % 2 == 0:
-        soma += numero
-print(soma)
+for cont in range(0, 6):
+    number = int(input('Digite um numero inteiro: '))
+    if number % 2 == 0:
+        soma += number
+print(f'A soma dos numeros pares é igual a {soma}')
