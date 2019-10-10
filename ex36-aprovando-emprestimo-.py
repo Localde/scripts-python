@@ -1,10 +1,11 @@
-preco = float(input('Quanto custa a casa? '))
-salario = float(input('Quanto é seu salario? '))
-tempo = int(input('Em quantos anos deseja pagar? '))
-limite = salario * 0.3
-parcela_mensal = preco / (tempo * 12)
+valor_da_casa = float(input('Quanto custa a casa? '))
+salario = float(input('Qual é o seu salario? '))
+anos = int(input('Em quantos anos deseja pagar a casa? '))
 
-if parcela_mensal <= limite:
-    print('Você deve pagar R${:.2f} por mes durante {} meses'.format(parcela_mensal, tempo * 12))
+prestacao_mensal = (valor_da_casa / anos) / 12
+limite = salario * 0.3
+
+if prestacao_mensal <= limite:
+    print(f'O valor a pagar é de {prestacao_mensal:.2f}')
 else:
-    print('O emprestimo foi negado')
+    print(f'O emprestimo foi negado pois ultrapassou o limite de 30%.')

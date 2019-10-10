@@ -1,2 +1,3 @@
-nome_completo = str(input('Digite um nome: ')).lower()
-print(f'É {"silva" in nome_completo} que possui silva no nome.')
+nome_completo = str(input('Digite seu nome completo: ')).lower()
+verifica = 'silva' in nome_completo
+print(f'É {verifica} que você tem Silva no nome.')
