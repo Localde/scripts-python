@@ -1,18 +1,17 @@
-product = float(input('What is the normal price of the product? '))
+valor_do_produto = float(input('Qual é o valor do produto? '))
+print("""
+[1] Á vista dinheiro/cheque: 10% de desconto
+[2] Á vista no cartão: 5% de desconto
+[3] Em até 2x no cartão: preço normal
+[4]- 3x ou mais no cartão: 20% de juros.
+""")
+forma_de_pagamento = int(input())
 
-print('\nDigite 1 para Á VISTA DINHEIRO/CHEQUE: 10% de desconto.')
-print('Digite 2 para Á VISTA NO CARTÃO: 5% DE DESCONTO.')
-print('Digite 3 para EM ATÉ 2X NO CARTÃO: PREÇO NORMAL.')
-print('Digite 4 para 3X OU MAIS NO CARTÃO: 20% DE JUROS.\n')
-escolha = str(input())
-
-if escolha == '1':
-    print('Á VISTA DINHEIRO/CHEQUE: R${:.2f}'.format(product * 0.9))
-elif escolha == '2':
-    print('Á VISTA NO CARTÃO: R${:.2f}'.format(product * 0.95))
-elif escolha == '3':
-    print('EM ATÉ 2X NO CARTÃO: R${:.2f}'.format(product))
-elif escolha == '4':
-    print('3X OU MAIS NO CARTÃO: R${:.2f}'.format(product * 1.20))
-else:
-    print('Não existe esta opção.')
+if forma_de_pagamento == 1:
+    print(f'{valor_do_produto * 0.9:.2f}')
+elif forma_de_pagamento == 2:
+    print(f'{forma_de_pagamento * 0.95:.2f}')
+elif forma_de_pagamento == 3:
+    print(f'{forma_de_pagamento:.2f}')
+elif forma_de_pagamento == 4:
+    print(f'{forma_de_pagamento * 1.2:.2f}')
