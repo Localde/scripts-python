@@ -1,8 +1,5 @@
-lado_a = float(input('Digite o valor de um lado do triângulo:'))
-lado_b = float(input('Digite o valor de outro lado do triângulo: '))
-lado_c = float(input('Digite o valor de outro lado do triângulo: '))
+a_lado = int(input('Digite o valor do lado A: '))
+b_lado = int(input('Digite o valor do lado B: '))
+c_lado = int(input('Digite o valor do lado C: '))
 
-if lado_a >= lado_b and lado_a >= lado_c and lado_b + lado_c >= lado_a or lado_b >= lado_a and lado_b >= lado_c and lado_a + lado_c >= lado_b or lado_c >= lado_a and lado_c >= lado_b and lado_a + lado_b >= lado_c:
-    print('É um triângulo.')
-else:
-    print('não é um triângulo.')
+print('É um triângulo' if c_lado <= a_lado >= b_lado and c_lado + b_lado >= a_lado or a_lado <= c_lado >= b_lado and a_lado + b_lado >= c_lado or a_lado <= b_lado >= c_lado and a_lado + c_lado >= b_lado else 'Não é um triângulo.')

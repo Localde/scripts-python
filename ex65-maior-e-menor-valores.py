@@ -1,17 +1,26 @@
 opção = str('s')
 soma = 0
 media = 0
-while opção != 'n':
+maior = menor = 0
+while opção == 's':
     number = int(input('Digite um numero inteiro: '))
-    maior = number
-    menor = number
-    opção = str(input('Deseja continuar? [s] or [n] '))
-    if number >= maior and number >= menor:
-        maior = number
-    if number <= menor and number <= menor:
-        menor = number
+    opção = str(input('Deseja continuar? [s] or [n] ')).lower()
+    if opção != 'n' and opção != 's':
+        print('Esta opção é invalida.')
+        break
     soma += number
     media += 1
-print(f'Média: {soma/media}')
-print(f'Maior: {maior}')
-print(f'Menor: {menor}')
+
+    if media == 1:
+        maior = menor = number
+    else:
+        if number > maior:
+            maior = number
+        if number < menor:
+            menor = number
+if soma == 0 or media == 0:
+    print('Não tem como realizar a média.')
+else:
+    print(f'Média: {soma/media}')
+    print(f'Maior: {maior}')
+    print(f'Menor: {menor}')

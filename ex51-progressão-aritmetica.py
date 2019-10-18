@@ -1,6 +1,6 @@
-primeiro = int(input('Digite o primeiro termo: '))
-razão = int(input('Digite a razão: '))
-decimo = primeiro + (10 - 1) * razão
-for cont in range(primeiro, decimo + razão, razão):
-    print(f'{cont} ', end='-> ')
-print('Acabou')
+primeiro_termo = int(input('Qual é o primeiro termo da P.A.? '))
+razao = int(input('Qual é a razão? '))
+
+for cont in range(primeiro_termo, primeiro_termo + 10):
+    primeiro_termo += razao
+    print(primeiro_termo, end=' ')
