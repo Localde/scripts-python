@@ -1,14 +1,10 @@
-number = int(input('Digite um numero inteiro: '))
-soma = 0
-#O NUMERO SÓ PODE SER DIVISIVEL POR 1 OU POR ELE MESMO.
+number = int(input('Digite um número: '))
+resultado = 0
 
-if number % 2 != 0:
-    for cont in range(2, number + 1):
-        if number % cont == 0:
-            soma = soma + 1
-
-    if soma == 1:
-        print('é primo')
-
+for cont in range(2, number + 1):
+    if number % cont == 0:
+        resultado += 1
+if resultado == 1:
+    print('É um primo')
 else:
-    print('Não é primo')
+    print('Não é um numero primo.')

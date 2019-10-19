@@ -1,10 +1,11 @@
-note_1 = float(input('What was your grade from the first two months? '))
-note_2 = float(input('What was you grade for the second quarter? '))
-average = (note_1 + note_2) / 2
+a_nota = int(input('Digite a nota de um aluno: '))
+b_nota = int(input('Digite a nota de outro aluno: '))
 
-if average < 5:
-    print('DISAPPROVED')
-elif average >= 5 and average <= 6.9:
-    print('RECOVERY')
+media = (a_nota + b_nota) / 2
+
+if media < 5:
+    print('REPROVADO COM A NOTA: {}.'.format(media))
+elif 5 <= media < 6.9:
+    print('RECUPERAÇÃO COM A NOTA: {}.'.format(media))
 else:
-    print('APPROVED')
+    print('APROVADO COM A NOTA: {}.'.format(media))

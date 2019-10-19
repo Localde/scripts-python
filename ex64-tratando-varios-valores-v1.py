@@ -1,11 +1,10 @@
-cont = 0
-soma = 0
-number = 0
-while number != 999:
-    number = int(input('Digite um numero: '))
+escolha = 999
+cont = soma = 0
+while escolha == 999:
+    number = int(input('Digite um numero inteiro: '))
     if number == 999:
         break
-    soma += number
     cont += 1
-print(f'Quantidade de numeros digitados: {cont}')
+    soma += number
+print(f'Quant. de numeros digitados: {cont}')
 print(f'Soma dos numeros digitados: {soma}')
