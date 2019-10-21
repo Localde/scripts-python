@@ -1,10 +1,7 @@
 from random import randint
-
-numero = int(input('Digite um numero de 0 a 5: '))
-
-computador = randint(0, 5)
-
-if numero == computador:
-    print('Voce venceu.')
+escolha = int(input('Digite um numero de 0 a 5: '))
+maquina = randint(0, 5)
+if escolha == maquina:
+    print(f'Acertou Miseravel!')
 else:
-    print(f'Voce perdeu pois o computador escolheu o {computador}')
+    print(f'Errooooou!')

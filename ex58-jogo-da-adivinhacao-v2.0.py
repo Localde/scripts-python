@@ -1,8 +1,11 @@
 from random import randint
-
-print('Adivinhe o numero que estou pensando: ')
-escolha = int(input())
-maquina = randint(0, 10)
-
-while escolha != maquina:
-    escolha = int(input('Você não acertou. Tente novamente: '))
+cont = 1
+while True:
+    escolha = int(input('Digite um numero de 0 a 10: '))
+    maquina = randint(0, 10)
+    if escolha != maquina:
+        cont += 1
+        print(f'Maquina pensou: {maquina}')
+    else:
+        break
+print(f'Foram necessarios {cont} tentativas para acertar.')

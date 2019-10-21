@@ -1,12 +1,9 @@
-#from math import factorial
-
-n = int(input('Digite um número para calcular seu fatorial: '))
-c = n
-f = 1
-while c > 0:
-    print('{}'.format(c), end='')
-    print('x' if c > 1 else ' = ', end='')
-    f = f * c
-    c -= 1
-#f = factorial(n)
-print('{}'.format(f))
+a = int(input('Digite um numero inteiro qualquer: '))
+d = a
+while True:
+    b = a - 1
+    d *= b
+    a = b
+    if b == 1:
+        break
+print(f'{d}')

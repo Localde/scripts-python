@@ -1,4 +1,3 @@
-a_nota = float(input('Digite uma nota: '))
-b_nota = float(input('Digite outra nota: '))
-
-print(f'Média: {(a_nota + b_nota) / 2}')
+nota1 = float(input('Qual é a sua nota? '))
+nota2 = float(input('Qual é a outra nota? '))
+print(f'Média: {(nota1 + nota2)/2}')

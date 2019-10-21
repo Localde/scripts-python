@@ -1,20 +1,19 @@
-escolha = 's'
-media = rep = soma = maior = menor = 0
-
-while escolha == 's':
-    escolha = str(input('Deseja escolher um numero?[s][n] '))
-    if escolha == 's':
-        number = int(input('Digite um numero inteiro: '))
-        rep += 1
-        soma += number
-        media = soma / rep
-    if rep == 1:
+soma = cont = maior = menor = 0
+while True:
+    number = int(input('Digite um numero inteiro: '))
+    cont += 1
+    soma += number
+    media = soma / cont
+    if cont == 1:
         maior = number
         menor = number
-    if number >= maior:
+    elif number > maior:
         maior = number
-    if number <= menor:
+    elif number < menor:
         menor = number
-print(f'Média: {media}')
-print(f'Maior: {maior}')
-print(f'Menor: {menor}')
+    escolha = str(input('Deseja continuar [s] [n]? '))
+    if escolha == 'n':
+        break
+print(f'A média é igual a: {media}')
+print(f'O maior é {maior}')
+print(f'O menor é {menor}')
