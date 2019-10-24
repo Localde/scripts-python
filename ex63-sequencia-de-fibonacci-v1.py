@@ -1,10 +1,14 @@
-cont = int(input('Digite um numero inteiro qualquer: '))
-t1 = 0
-t2 = 1
-print(f'{t1} -> {t2} ', end='')
-while cont > 0:
-    t3 = t1 + t2
-    print(f'-> {t3} ', end='')
-    t1 = t2
-    t2 = t3
-    cont -= 1
+fim = int(input('Digite um numero: '))
+print('0')
+print('1')
+print('1')
+print('2')
+inicio = 4
+a = 2
+b = 1
+while fim > inicio:
+    c = a + b
+    print(f'{c}')
+    b = a
+    a = c
+    inicio += 1
