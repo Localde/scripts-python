@@ -1,20 +1,18 @@
-preço_do_produto = float(input('Digite o preço do produto: '))
-
-print("""Escolha uma das opções abaixo:
-[1]- Á vista dinheiro/cheque: 10% de desconto
-[2]- Á vista no cartão: 5% de desconto
-[3]- Em até 2x no cartão: preço normal
-[4]- 3x ou mais no cartão: 20% de juros.
+preço_do_produto = float(input('Qual é o preço do produto? '))
+print("""
+[a]- Á vista dinheiro/cheque: 10% de desconto
+[b]- Á vista no cartão: 5% de desconto
+[c]- Em até 2x no cartão: preço normal
+[d]- 3x ou mais no cartão: 20% de juros.
 """)
-escolha = int(input())
-
-if escolha == 1:
-    print(f'{preço_do_produto * 0.90}')
-elif escolha == 2:
-    print(f'{preço_do_produto * 0.95}')
-elif escolha == 3:
-    print(f'{preço_do_produto}')
-elif escolha == 4:
-    print(f'{preço_do_produto * 1.2}')
+escolha = str(input())
+if escolha == 'a':
+    print(f'A vista dinheiro/cheque: {preço_do_produto * 0.90}')
+elif escolha == 'b':
+    print(f'A vista no cartão: {preço_do_produto * 0.95}')
+elif escolha == 'c':
+    print(f'Em até 2x no cartão: {preço_do_produto}')
+elif escolha == 'd':
+    print(f'3x ou mais no cartão: {preço_do_produto * 1.20}')
 else:
-    escolha = int(input())
+    print('Opção invalida')

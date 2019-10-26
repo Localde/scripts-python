@@ -1,7 +1,5 @@
-numero = int(input('Digite um numero inteiro qualquer:'))
-if numero == 0:
-    print('É neutro')
-if numero % 2 == 0 and numero != 0:
+number = int(input('Digite um numero: '))
+if number % 2 == 0:
     print('É par.')
-if numero % 2 != 0 and numero != 0:
+else:
     print('É impar.')

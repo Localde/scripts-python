@@ -1,9 +1,11 @@
-a = int(input('Digite um numero inteiro qualquer: '))
-d = a
+#5! = 5 * 4 * 3 * 2 * 1 = 120
+
+number = int(input('Digite um numero inteiro: '))
+b = a = number
 while True:
-    b = a - 1
-    d *= b
-    a = b
-    if b == 1:
+    a -= 1
+    c = a * b
+    b = c
+    if a == 1:
+        print(f'{c}')
         break
-print(f'{d}')

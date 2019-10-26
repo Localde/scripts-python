@@ -1,7 +1,7 @@
-#ano_de_nascimento = int(input('Em que ano você nasceu? '))
-#idade = 2019 - ano_de_nascimento
-idade = 21
-if idade <= 9:
+ano_de_nascimento = int(input('Em que ano você nasceu? '))
+idade = 2019 - ano_de_nascimento
+
+if 9 >= idade:
     print('MIRIM')
 elif 9 < idade <= 14:
     print('INFANTIL')

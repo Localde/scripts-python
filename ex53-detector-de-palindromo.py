@@ -1,13 +1,9 @@
-frase = str(input('Digite uma frase: ')).strip().upper()
-
-palavras = frase.split()
-junto = ''.join(palavras)
+frase = str(input('Digite algo: ')).strip().lower().split()
+juntar = ''.join(frase)
 inverso = ''
-for letra in range(len(junto) - 1, -1, -1):
-    inverso += junto[letra]
-print('O inverso de {} é {}'.format(junto, inverso))
-if inverso == junto:
-    print('Temos um palindromo!')
+for cont in range(len(juntar) - 1, -1, -1):
+    inverso += juntar[cont]
+if inverso == juntar:
+    print('É um palindromo.')
 else:
-    print('não é um palindromo')
-#DIFICULDADE
+    print('Não é um palindromo.')
