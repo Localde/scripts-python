@@ -1,20 +1,19 @@
-lista = []
-cont = 0
+lista_de_numeros = []
+quantidade_de_numeros_digitados = 0
 while True:
-    number = int(input('Digite um numero: '))
-    lista.append(number)
-    cont += 1
-    escolha = str(input('Deseja continuar [s] sim ou [n] não: ')).lower()
-    if escolha == 's':
-        continue
-    elif escolha == 'n':
-        print(f'Foram digitados {cont} numeros.')
+    lista_de_numeros.append(int(input('Digite um numero: ')))
+    quantidade_de_numeros_digitados += 1
+    escolha = str(input('Deseja continuar? [s] ou [n]'))
+    if escolha == 'n':
+        print(f'Quantidade de numeros digitados: {quantidade_de_numeros_digitados}')
+        if 5 in lista_de_numeros:
+            print(f'O 5 está na lista.')
+        else:
+            print(f'O 5 não está na lista.')
+        lista_de_numeros.sort(reverse=True)
+        print(f'Lista na Ordem Decrescente: {lista_de_numeros}')
         break
+    elif escolha == 's':
+        continue
     else:
-        print('Comando invalido')
-lista.sort(reverse=True)
-print(f'{lista}')
-if 5 in lista:
-    print('O numero 5 esta na lista.')
-else:
-    print('O numero 5 não esta na lista.')
+        print('Comando Inválido.')
