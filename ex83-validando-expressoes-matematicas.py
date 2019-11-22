@@ -1,17 +1,16 @@
 lista = []
-exp = []
 
 expressão = str(input('Digite uma expressão: '))
-lista.append(expressão)
-for caractere in lista:
+
+for caractere in expressão:
     if caractere == '(':
-        exp.append('(')
-    else:
-        if caractere == ')':
-            exp.pop()
+        lista.append('(')
+    elif caractere == ')':
+        if '(' in lista:
+            lista.pop()
         else:
-            exp.append(')')
-if len(exp) == 0:
+            lista.append(')')
+if len(lista) == 0:
     print('É uma expressão.')
 else:
     print('Não é uma expressão.')
