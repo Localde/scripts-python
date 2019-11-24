@@ -1,8 +1,10 @@
-palavras = 'Caderno', 'Caneta', 'Lapis'
+palavras = 'Ollywer', 'Gabriel', 'Weliton', 'Alexandre'
 
 for palavra in palavras:
     print(f'{palavra}: ', end='')
     for letra in palavra:
-        if letra in 'aeiou':
-            print(f'{letra}', end='')
+        if letra in 'aeiouAEIOU':
+           print(letra, end=' ')
+        else:
+            continue
     print('\n')
